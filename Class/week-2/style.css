@@ -1,0 +1,37 @@
+.header, .footer {
+    height: 70px;
+    min-height: 70px;
+    max-height: 70px;
+}
+
+
+#main [class*='col-md-3'] {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+#blog #main [class*='col-md-9'] {
+    height: 500px;
+    min-height: 500px;
+    max-height: 500px;
+}
+
+#blog #main [class*='col-md-3'] {
+    height: 500px;
+    min-height: 500px;
+    max-height: 500px;
+}
+
+
+#portfolio #main #body-12 [class*='col-md-12'] {
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+#portfolio #main [class*='col-md-3'] {
+    height: 80px;
+    min-height: 80px;
+    max-height: 80px;
+}
