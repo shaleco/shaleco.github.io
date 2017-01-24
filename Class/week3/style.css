@@ -1,0 +1,42 @@
+.header, .footer {
+    height: 70px;
+    min-height: 70px;
+    max-height: 70px;
+}
+
+
+ [class*='col-md-2'] {
+    height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+ [class*='col-md-8'] {
+    height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+body{
+  font-size: 15px;
+  font-weight:bold;
+  color: whitesmoke;
+}
+
+#portfolio [class*='col-md-3'] {
+    height: 70px;
+    min-height: 70px;
+    max-height: 70px;
+    padding: 5px;
+}
+
+#portfolio .middle-full-row {
+    height: 250px;
+    min-height: 250px;
+    max-height: 250px;
+}
+
+#portfolio .indented{
+  margin-left: 50px;
+  margin-right: 50px;
+}

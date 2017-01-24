@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webpage</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style>
+
+    .header{
+      height: 20px;
+      min-height: 20px;
+      max-height: 20px;
+    }
+
+    .footer{
+      height: 40px;
+      min-height: 40px;
+      max-height: 40px;
+    }
+
+    .nested{
+      height: 30px;
+      min-height: 30px;
+      max-height: 30px;
+    }
+
+    .nested-largest{
+      height: 50px;
+      min-height: 50px;
+      max-height: 50px;
+    }
+
+    .left{
+      height: 100px;
+      min-height: 100px;
+      max-height: 100px;
+    }
+
+
+    .right{
+      height: 80px;
+      min-height: 80px;
+      max-height: 80px;
+    }
+
+
+
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="nesting">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="header col-md-12 randomColor">
+        </div>
+      </div>
+
+      <div class ="row">
+        <div class="nested-largest col-md-7 col-md-12 randomColor">
+          <div class="row">
+            <div class="nested col-md-7 col-md-3 randomColor" ></div>
+            <div class="nested col-md-7 col-md-9 randomColor"></div>
+          </div>
+
+          <div class="row">
+            <div class=" nested col-md-7 col-md-3 randomColor" ></div>
+            <div class="nested col-md-7 col-md-9 randomColor"></div>
+          </div>
+
+          <div class="row">
+            <div class=" nested col-md-7 col-md-3 randomColor" ></div>
+            <div class="nested col-md-7 col-md-9 randomColor"></div>
+          </div>
+
+          <div class="row">
+            <div class="nested col-md-7 col-md-3 randomColor" ></div>
+            <div class="nested col-md-7 col-md-9 randomColor"></div>
+          </div>
+
+        </div>
+
+        <div class="left col-md-3 randomColor"></div>
+        <div class="right col-md-2 randomColor"></div>
+      </div>
+
+      <div class="row">
+        <div class="left col-md-3 randomColor"></div>
+        <div class="right col-md-2 randomColor"></div>
+      </div>
+
+      <div class="row">
+        <div class="left col-md-3 randomColor"></div>
+        <div class="right col-md-2 randomColor"></div>
+      </div>
+
+      <div class="row">
+        <div class=" footer col-md-12 randomColor">
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- This is javascript code that Anderson gave us to copy and paste it which ads color-->
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+//when doc is ready get all classes called random colour
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+//change background color to an rgb colour from a random number between 0 and 255
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+//does it on the body as well
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+        })
+    </script>
+  </body>
+</html>
