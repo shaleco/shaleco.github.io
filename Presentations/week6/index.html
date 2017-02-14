@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>presentation week 6</title>
+
+    <style>
+    .header{
+      height:150px;
+      max-height:150px;
+      min-height:150px;
+      font-size: 70px;
+      line-height: 150px;
+      text-align: center;
+      word-spacing: 500%;
+    }
+    .navigation{
+      height:50px;
+      max-height:50px;
+      min-height:50px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .section2{
+      height:250px;
+      max-height:250px;
+      min-height:250px;
+      font-size: 20px;
+      position: relative;
+    }
+
+    .section2 p{
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+    }
+
+    .section1{
+      height:250px;
+      max-height:250px;
+      min-height:250px;
+      font-size: 20px;
+
+    }
+    .section1 img{
+      width:100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .footer{
+      height:100px;
+      max-height:100px;
+      min-height:100px;
+    }
+    </style>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <div class="container">
+    <div class="row  randomColor header">
+      <div class="col-md-12">
+        <p>Larry's Car Rentals</p>
+      </div>
+    </div>
+    <div class="row randomColor navigation">
+      <div class="col-md-12">
+        <p>
+          Home | About | Buy a Car | Rent a Car | Contact
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 randomColor section1">
+        <img src="images/image1.jpg" />
+      </div>
+      <div class="col-md-9 randomColor section2">
+        <p>
+        This is a good design for the site because the sideways images force the viewer to stay on the page longer in order to decipher what it is. Also the header shows the name of the place clearly so people know they are looking in the right place. The nave bar contains easy to follow links and the information is simple to find on the page (look at that immense critical thinking)
+        </p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-md-3 randomColor section1">
+        <img src="images/image2.jpg" />
+      </div>
+      <div class="col-md-9 randomColor section2">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin erat sit amet lacus pulvinar pharetra. Nulla finibus bibendum arcu ut porttitor. Suspendisse sed condimentum dui. Cras non tortor ut diam hendrerit malesuada eget eget ex. Sed tincidunt facilisis neque eu cursus. Sed sed massa ac velit hendrerit vulputate cursus vel ligula.
+        </p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-md-3 randomColor section1">
+        <img src="images/image3.jpg" />
+      </div>
+      <div class="col-md-9 randomColor section2">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin erat sit amet lacus pulvinar pharetra. Nulla finibus bibendum arcu ut porttitor. Suspendisse sed condimentum dui. Cras non tortor ut diam hendrerit malesuada eget eget ex. Sed tincidunt facilisis neque eu cursus. Sed sed massa ac velit hendrerit vulputate cursus vel ligula.
+        </p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-md-3 randomColor section1">
+        <img src="images/image4.jpg" />
+      </div>
+      <div class="col-md-9 randomColor section2">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin erat sit amet lacus pulvinar pharetra. Nulla finibus bibendum arcu ut porttitor. Suspendisse sed condimentum dui. Cras non tortor ut diam hendrerit malesuada eget eget ex. Sed tincidunt facilisis neque eu cursus. Sed sed massa ac velit hendrerit vulputate cursus vel ligula.
+        </p>
+      </div>
+    </div>
+    <div class="row footer">
+      <div class="col-md-12 randomColor footer">
+        <header>
+          <p>
+            These are some words in a footer
+          </p>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- This is javascript code that Anderson gave us to copy and paste it which ads color-->
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+        //when doc is ready get all classes called random colour
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+                //change background color to an rgb colour from a random number between 0 and 255
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+            //does it on the body as well
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+        })
+    </script>
+  </body>
+</html>
