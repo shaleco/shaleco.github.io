@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>javacript lesson</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <p>
+      Hello world
+    </p>
+
+    <div id="myDiv">
+      Here is some text. wow cool
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+    //alert("this is a popup");
+    //() means execute a function
+    // double slash means a comment
+    /*
+    this is a multi line comment
+    */
+    console.log("for debugging");
+    //to look at console inspect page
+
+    var myvar;
+    //in quotes is a string
+    var myAnothervar="here is another var";
+    //alert(myAnothervar);
+    //console.log(myAnothervar);
+
+    var myName ="shelby";
+    var myFirstName ="Shelby";
+    var myLastName="Cockhill";
+    //alert("My first name is " +myFirstName +" and my last name is "+myLastName);
+    function sayMyName(){
+      console.log("Your name is " +myName);
+    }
+    function sayMyName2(name){
+      console.log("Your name is " +name);
+    }
+    //calling the function
+    sayMyName2("mark");
+    sayMyName2("shelby");
+
+    //jquery, when the doc is readt have jquery get the element with id myDiv and calls the html function
+
+$(document).ready(function(){
+
+  alert("document is ready");
+  $("#myDiv").html("hey I was able to change the html how cool wow");
+
+});
+
+
+
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
