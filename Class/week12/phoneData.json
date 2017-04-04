@@ -1,0 +1,72 @@
+[{
+        "brand": "Samsung",
+        "phone": "Galaxy S7",
+        "price": "$100.00",
+        "image": "https://www.koodomobile.com/sites/default/files/styles/product_image/public/galaxys7.png?itok=mrphJsSb"
+    },
+
+    {
+        "brand": "iPhone",
+        "phone": "SE 16GB",
+        "price": "$200.00",
+        "image": "https://www.koodomobile.com/sites/default/files/styles/product_image/public/iphonese-rsgld.png?itok=ifYCSofp"
+    },
+
+    {
+        "brand": "Google",
+        "phone": "Pixel 64GB",
+        "price": "$300.00",
+        "image": "https://www.koodomobile.com/sites/default/files/styles/product_image/public/google-pixel-cropped-web.png?itok=hDzlmqcb"
+    },
+
+    {
+        "brand": "iPhone",
+        "phone": "7 64GB",
+        "price": "$200.00",
+        "image": "https://www.koodomobile.com/sites/default/files/styles/product_image/public/galaxys7.png?itok=mrphJsSb"
+    },
+
+    {
+        "brand": "Samsung",
+        "phone": "Note 7",
+        "price": "$100.00",
+        "image": "https://www.koodomobile.com/sites/default/files/styles/product_image/public/iphonese-rsgld.png?itok=ifYCSofp"
+    },
+
+    {
+        "brand": "Nokia",
+        "phone": "indestructable beast",
+        "price": "$200.00",
+        "image": "https://www.koodomobile.com/sites/default/files/styles/product_image/public/google-pixel-cropped-web.png?itok=hDzlmqcb"
+    },
+
+    {
+        "brand": "Google",
+        "phone": "Pixel 124GB",
+        "price": "$500.00",
+        "image": "https://www.koodomobile.com/sites/default/files/styles/product_image/public/galaxys7.png?itok=mrphJsSb"
+    },
+
+    {
+        "brand": "iPhone",
+        "phone": "SE 124GB",
+        "price": "$400.00",
+        "image": "https://www.koodomobile.com/sites/default/files/styles/product_image/public/iphonese-rsgld.png?itok=ifYCSofp"
+    },
+
+    {
+        "brand": "iPhone",
+        "phone": "6 Plus 64GB",
+        "price": "$600.00",
+        "image": "https://www.koodomobile.com/sites/default/files/styles/product_image/public/google-pixel-cropped-web.png?itok=hDzlmqcb"
+    },
+
+    {
+        "brand": "Samsung",
+        "phone": "Galaxy 6 64GB ",
+        "price": "$100.00",
+        "image": "https://www.koodomobile.com/sites/default/files/styles/product_image/public/galaxys7.png?itok=mrphJsSb"
+    }
+
+
+]

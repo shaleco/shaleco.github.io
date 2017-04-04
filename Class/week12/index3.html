@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phone Shop</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style>
+    .height1{
+      height: 75px;
+      max-height: 75px;
+      min-height: 75px;
+    }
+
+    .height2{
+      height: 800px;
+      max-height: 800px;
+      min-height: 800px;
+    }</style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <div class="container">
+
+        <div class="row">
+          <div class="col-md-12 header randomColor height1">
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-2 randomColor height2">
+          </div>
+
+          <div class="col-md-8 height2">
+
+            <table id="phone-table" class="table">
+
+              <tr>
+                <th></th>
+                <th>Phone</th>
+                <th>Brand</th>
+                <th>Price</th>
+                <th>Photo</th>
+              </tr>
+
+            </table>
+
+          </div>
+
+          <div class="col-md-2  height2">
+          </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+
+    var url="http://jsoneditoronline.org/?id=4c8b322a21c25c78951a0f1178c79e34";
+
+    $.getJSON(url)
+            .done(function(data) {
+                console.log("success!");
+                console.dir(data);
+
+                var myHtml="";
+
+                 })
+            .fail(function(data) {
+                console.log("fail!");
+                console.dir(data);
+            })
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
